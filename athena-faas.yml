@@ -6,6 +6,4 @@ functions:
   athena-faas:
     lang: Dockerfile
     handler: ./function
-    image: dockerregistrysmithco.azurecr.io/athena-faas
-    secrets:
-      - acr-auth
+    image: philippelavoie/athenapdf-faas
