@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:31112
+
+functions:
+  athena-faas:
+    lang: Dockerfile
+    handler: ./function
+    image: dockerregistrysmithco.azurecr.io/athena-faas
+    secrets:
+      - acr-auth
